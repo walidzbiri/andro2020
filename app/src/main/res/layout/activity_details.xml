@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".details_activity">
+
+<ImageView
+    android:id="@+id/poster_image_details"
+    android:layout_width="180dp"
+    android:layout_height="180dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+</ImageView>
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="FIIIIILM"
+        android:paddingBottom="50dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poster_image_details"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Télephone"
+        android:textSize="15dp"
+
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="078657656"
+        android:paddingBottom="30dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTel"
+        >
+    </TextView>
+    <Button
+        android:id="@+id/appeler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appeler"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        android:layout_marginRight="50dp"></Button>
+
+    <TextView
+        android:id="@+id/textAdresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Adresse"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephone"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="Rue machin"
+        android:paddingBottom="30dp"
+        android:textColor="@color/purple_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAdresse"
+        >
+    </TextView>
+    <Button
+        android:id="@+id/ouvrirMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voir dans maps"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telephone"
+        android:layout_marginRight="50dp"></Button>
+
+        <ImageView
+            android:id="@+id/linkedin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="130dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/ProfilLinkedIn"
+            app:layout_constraintTop_toBottomOf="@+id/adresse"
+            app:srcCompat="@drawable/ic_linkedin"></ImageView>
+        <TextView
+            android:id="@+id/ProfilLinkedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil Linkedin"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toRightOf="@+id/linkedin"
+            app:layout_constraintTop_toTopOf="@+id/linkedin"
+            app:layout_constraintBottom_toBottomOf="@+id/linkedin"
+            >
+        </TextView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
